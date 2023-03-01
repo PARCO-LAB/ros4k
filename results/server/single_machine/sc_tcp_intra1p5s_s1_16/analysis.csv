@@ -1,0 +1,3 @@
+id,mean,std,median
+inter_time_arrival,501.777,35.5519,499.809
+latency,0.686701,0.255227,0.69662
