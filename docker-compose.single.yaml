@@ -1,0 +1,15 @@
+version: '3'
+services:
+    edgedevice:
+        image: images:ros2-shc
+        container_name: shc0
+        volumes:
+            - ~/ros2_ws:/ros_ws/docker
+            - /dev/shm:/dev/shm
+            - /tmp/.X11-unix:/tmp/.X11-unix
+            - ~/.Xauthority:/root/.Xauthority
+            - /etc/localtime:/etc/localtime:ro
+        stdin_open: true
+        tty: true
+        environment:
+            DISPLAY: $DISPLAY

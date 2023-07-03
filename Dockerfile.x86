@@ -1,0 +1,13 @@
+ARG BASE_IMAGE=amd64/ros:eloquent
+FROM ${BASE_IMAGE}
+
+ENV NUM_JOBS=4
+
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install -y libacl1*
+RUN apt-get install -y libncurses5-dev libncursesw5-dev
+
+WORKDIR /ros_ws
+COPY . src
+RUN . /opt/ros/eloquent/setup.sh && export MAKEFLAGS="-j $NUM_JOBS" && colcon build --packages-ignore shc
+RUN . /opt/ros/eloquent/setup.sh && . /ros_ws/install/setup.sh && export MAKEFLAGS="-j $NUM_JOBS" && colcon build --packages-select shc
