@@ -149,7 +149,7 @@ Smart Pointers and Shared Memory Synchronisation for Efficient Inter-process Com
 
 ## Citation and Contribution guidelines
 
-```math
+```latex
 @article{}
 ```
 
