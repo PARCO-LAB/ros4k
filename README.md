@@ -1,10 +1,18 @@
 # ROS4K: ROS for Kubernetes
 
-![ROS4K Framework](./plot_results/ros4k.png)
+
+![ROS4K](https://img.shields.io/badge/Repository_for-ROS4K-orange?)
+![ROS4K](https://img.shields.io/badge/made_with-C++-blue?)
+![ROS](https://img.shields.io/badge/ros-%230A0FF9.svg?logo=ros&logoColor=white)
+![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?logo=cmake&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?logo=kubernetes&logoColor=white)
 
 ## Orchestration-aware optimization of ROS2 communication protocols
 
 The robot operating system (ROS) standard has been extended with different communication mechanisms to address real-time and scalability requirements. On the other hand, containerization and orchestration platforms like Docker and Kubernetes are increasingly being adopted to strengthen platform-independent development and automatic deployment of software. In this work we quantitatively analyze the impact of topology, containerization, and edge-cloud distribution of ROS nodes on the efficiency of the ROS2 communication protocols. We then present a framework that automatically binds the most efficient ROS protocol for each node-to-node communication by considering architectural characteristics of both software and edge-cloud computing platform. 
+
+![ROS4K Framework](./plot_results/ros4k.png)
 
 ## Contributions
 
